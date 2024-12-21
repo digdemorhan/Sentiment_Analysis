@@ -16,6 +16,7 @@ Bu projede kullanılan kütüphaneler aşağıdaki gibidir:
 
 # Veriseti
 Proje, sosyal medyada bulunan ofansif yorumları içeren bir veri seti üzerinde çalışılmıştır. Veri setinde "text" ve "label" olmak üzere iki temel sütun bulunmaktadır. Veri seti eğitim aşamasında %80 eğitim ve %20 test verisi olarak ayrıştırılmıştır.
+
 Verisetinin linki: https://www.kaggle.com/datasets/toygarr/turkish-offensive-language-detection?resource=download&select=test.csv
 
 # Preprocessing Adımları
@@ -33,6 +34,7 @@ Proje kapsamında geliştirilen GRU modeli toplamda 5 katmandan oluşmaktadır.
 <li><b>GRU Layer (32 nöron)</b></li>
 <li><b>GRU Layer (16 nöron)</b></li>
 <li><b>Dense Layer (1 nöron)</b></li>
+
 Aktivasyon fonksiyonu "sigmoid" olarak tercih edilmiştir. Öğrenme oranı "1e-3" şeklinde belirlenmiştir. Model 10 epoch boyunca eğitilmiş olup doğruluk oranı %95.01 ve kayıp oranı 0.2400'dür. Model örnek veriler üzerinde de test edilmiştir.
 
 # LSTM Modeli
@@ -42,6 +44,7 @@ Proje kapsamında geliştirilen LSTM modeli toplamda 5 katmandan oluşmaktadır.
 <li><b>LSTM Layer (16 nöron)</b></li>
 <li><b>LSTM Layer (16 nöron)</b></li>
 <li><b>Dense Layer (1 nöron)</b></li>
+
 Aktivasyon fonksiyonu "sigmoid" olarak tercih edilmiştir. Öğrenme oranı "1e-3" şeklinde belirlenmiştir. Model 10 epoch boyunca eğitilmiş olup doğruluk oranı %95.01 ve kayıp oranı 0.2400'dür.
 
 # Model Performanslarının Karşılaştırılması
@@ -69,6 +72,7 @@ The libraries used in this project are as follows:
 
 # Dataset
 The project is based on a dataset containing offensive comments on social media. There are two main columns in the dataset: “text” and “label”. The dataset was split into 80% training and 20% test data during the training phase.
+
 Link to the dataset: https://www.kaggle.com/datasets/toygarr/turkish-offensive-language-detection?resource=download&select=test.csv
 
 # Preprocessing Steps
@@ -86,6 +90,7 @@ The GRU model developed within the scope of the project consists of 5 layers in 
 <li><b>GRU Layer (32 units)</b></li>
 <li><b>GRU Layer (16 units)</b></li>
 <li><b>Dense Layer (1 units)</b></li>
+
 The activation function is preferred as “sigmoid”. The learning rate was determined as “1e-3”. The model was trained for 10 epochs with an accuracy of 95.01% and a loss rate of 0.2400.
 
 # LSTM Model
@@ -95,6 +100,7 @@ The LSTM model developed within the scope of the project consists of 5 layers in
 <li><b>LSTM Layer (16 units)</b></li>
 <li><b>LSTM Layer (16 units)</b></li>
 <li><b>Dense Layer (1 units)</b></li>
+
 The activation function is preferred as “sigmoid”. The learning rate was determined as “1e-3”. The model was trained for 10 epochs with an accuracy of 95.01% and a loss rate of 0.2400.
 
 #  Comparison of Model Performances
